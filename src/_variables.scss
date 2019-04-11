@@ -1,0 +1,122 @@
+﻿
+// Custom Variables
+$twr-main-body-bg: #2D2D30;
+$twr-input-bg: #333337;
+$twr-content-bg: #252526;
+$twr-dark-content-bg: lighten(#1E1E1E, 2);
+
+
+$twr-border-color: #434346;
+$twr-component-border-color: #3F3F46;
+
+
+// Colors
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$primary: #007acc !default;
+$secondary: darken(#868e96, 15) !default;
+$success: darken(#5cb85c, 10) !default;
+$warning: #d5702c !default;
+$danger: #dc3b36 !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+// Body
+$body-bg: $twr-main-body-bg !default;
+$body-color: #F1F1F1 !default;
+
+// Tables
+$table-border-color: $gray-700 !default;
+
+$table-dark-bg: $twr-dark-content-bg !default;
+$table-dark-color: $gray-300 !default;
+
+// Forms
+$input-bg: $twr-input-bg !default;
+$input-disabled-bg: desaturate(darken($twr-input-bg, 5), 5) !default;
+
+$input-color: $body-color !default;
+$input-border-color: $twr-border-color !default;
+
+$input-placeholder-color: darken($gray-600, 5) !default;
+
+$input-group-addon-bg: darken($input-bg, 5) !default;
+
+// Navs
+$nav-tabs-border-color: $twr-border-color !default;
+$nav-tabs-link-hover-color: $body-color !default;
+$nav-tabs-link-hover-border-color: transparent transparent $nav-tabs-border-color !default;
+$nav-tabs-link-active-color: $gray-300;
+$nav-tabs-link-active-bg: $body-bg !default;
+$nav-tabs-link-active-border-color: $twr-border-color $twr-border-color $nav-tabs-link-active-bg !default;
+
+// Navbar
+
+// Pagination
+$pagination-color: $body-color !default;
+$pagination-bg: $dark !default;
+$pagination-border-color: $pagination-bg !default;
+
+$pagination-hover-color: lighten($pagination-color, 5) !default;
+$pagination-hover-bg: lighten($pagination-bg, 5) !default;
+$pagination-hover-border-color: $pagination-hover-bg !default;
+
+// Jumbotron
+$jumbotron-bg: $twr-dark-content-bg !default;
+
+// Cards
+$card-border-color: darken($twr-border-color, 10) !default;
+$card-bg: $twr-dark-content-bg !default;
+
+
+// Tooltips
+
+
+// Popovers
+$popover-bg: $twr-dark-content-bg !default;
+$popover-border-color: $table-border-color !default;
+
+$popover-header-bg: lighten($popover-bg, 3%) !default;
+
+
+// Modals
+$modal-content-bg: $body-bg !default;
+$modal-header-border-color: darken($twr-border-color, 5) !default;
+
+
+
+// Progress bars
+$progress-bg: $twr-dark-content-bg !default;
+
+// List group
+$list-group-bg: $twr-dark-content-bg !default;
+$list-group-border-color: darken($twr-border-color, 10) !default;
+
+$list-group-hover-bg: lighten($twr-dark-content-bg, 5) !default;
+
+$list-group-action-color: $body-color !default;
+$list-group-action-hover-color: $white !default;
+
+
+// Breadcrumbs
+$breadcrumb-bg: $twr-dark-content-bg !default;
+
+// Close
+$close-color: $white !default;
+$close-text-shadow: 0 1px 0 $black !default;
+
+// Code
+
+$kbd-bg: darken($gray-800, 10) !default;
+
+$pre-color: $body-color !default;
