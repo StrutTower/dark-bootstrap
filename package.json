@@ -1,6 +1,6 @@
 {
-  "version": "4.1.0",
-  "name": "vs-bootstrap-theme",
+  "version": "4.0.0",
+  "name": "dark-bootstrap-theme",
   "private": true,
   "devDependencies": {
     "bootstrap": "~4.3.1",
