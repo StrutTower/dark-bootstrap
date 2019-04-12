@@ -7032,3 +7032,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-dark {
   color: #1b1f22 !important; }
+
+.btn-default {
+  background: #343a40;
+  border: 1px solid #495057; }
+  .btn-default:hover, .btn-default:active, .btn-default:focus {
+    background: #3f474e; }
+  .btn-default:disabled, .btn-default .disabled {
+    background: #343a40; }
+
+.dropdown-menu {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); }

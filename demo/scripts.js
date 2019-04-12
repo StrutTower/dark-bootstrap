@@ -9,4 +9,6 @@
     $('form').on('submit', function (e) {
         e.preventDefault();
     });
+
+    $('.toast').toast('show');
 });
