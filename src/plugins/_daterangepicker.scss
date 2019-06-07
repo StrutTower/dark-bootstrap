@@ -1,0 +1,58 @@
+﻿///<reference path="../variables.scss" />
+///<reference path="../../node_modules/bootstrap/scss/bootstrap.scss" />
+
+body .daterangepicker {
+    color: $body-color !important;
+    background: $body-bg !important;
+    border-color: $input-border-color;
+
+    .calendar-table {
+        background: $body-bg;
+        border-color: $body-bg;
+
+        .prev span, .next span {
+            border-color: $body-color;
+        }
+    }
+
+    td.off, td.off.end-date, td.off.in-range, td.off.start-date {
+        background: $body-bg;
+        color: darken($body-color, 25);
+    }
+
+    td.available:hover, th.available:hover {
+        background: lighten($body-bg, 10);
+    }
+
+    td.active, th.active {
+        background: $primary;
+    }
+
+    td.in-range:not(.active):not(.off), th.in-range:not(.active):not(.off) {
+        color: $body-color;
+        background: lighten($body-bg, 20);
+    }
+
+    &:before {
+        border-bottom-color: $input-border-color;
+    }
+
+    &:after {
+        border-bottom-color: $body-bg;
+    }
+
+    select.ampmselect, select.monthselect, select.yearselect, select.hourselect, select.minuteselect, select.secondselect {
+        background: $input-bg;
+        color: $input-color;
+        border: 1px solid $input-border-color;
+
+        &::-ms-expand {
+            background:transparent;
+            border:none;
+        }
+    }
+
+    .drp-buttons {
+        border-color: $input-border-color;
+    }
+}

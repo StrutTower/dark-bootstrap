@@ -24,3 +24,19 @@
 .text-dark {
     color: darken($dark, 5) !important;
 }
+
+select::-ms-expand {
+    color:$body-color;
+}
+
+// Hide default arrow on the custom select list
+.custom-select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    background:white;
+}

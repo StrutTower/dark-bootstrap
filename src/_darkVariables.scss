@@ -16,7 +16,7 @@ $gray-500: #adb5bd !default;
 $gray-600: #868e96 !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
-$gray-900: lighten(#212529, 2.5) !default;
+$gray-900: darken($gray-800, 3.5) !default;
 $black: #000 !default;
 
 $primary: #007acc !default;
@@ -32,7 +32,7 @@ $body-bg: $gray-800 !default; //#2D2D30 !default;
 $body-color: #F1F1F1 !default;
 
 
-$link-color: lighten($primary, 10);
+$link-color: lighten($primary, 10) !default;
 
 // Tables
 $table-border-color: $gray-700 !default;
@@ -44,15 +44,20 @@ $table-bg-level: 0 !default;
 $table-border-level: -2 !default;
 
 // Forms
-$input-bg: lighten($gray-900, 2) !default;// #333337 !default;
-$input-disabled-bg: desaturate(lighten($input-bg, 5), 5) !default;
+$input-bg: darken($gray-800, 2) !default;// #333337 !default;
+$input-disabled-bg: $body-bg !default; //desaturate(lighten($input-bg, 5), 5) !default;
 
 $input-color: $body-color !default;
 $input-border-color: $gray-700 !default;
 
 $input-placeholder-color: darken($gray-600, 5) !default;
 
-$input-group-addon-bg: darken($input-bg, 5) !default;
+$input-group-addon-bg: $gray-900 !default;
+
+$custom-select-indicator-color: $input-color !default;
+
+$custom-range-track-bg: $gray-500 !default;
+
 
 // Navs
 $nav-tabs-border-color: $gray-700 !default;

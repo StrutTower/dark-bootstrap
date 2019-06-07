@@ -1,0 +1,41 @@
+﻿///<reference path="../variables.scss" />
+///<reference path="../../node_modules/bootstrap/scss/bootstrap.scss" />
+
+div.note-editor.note-frame {
+    border-color: $input-border-color;
+
+    div.note-toolbar {
+        background: darken($body-bg,2);
+        border-bottom: 1px solid $input-border-color;
+
+        & > .note-btn-group {
+
+            .note-btn {
+                background: $body-bg;
+                color: $body-color;
+
+                &.active {
+                    background:$primary;
+                }
+
+                &:hover {
+                    background: darken($body-bg,3);
+                }
+            }
+
+            .btn-light {
+                border-color: $input-border-color;
+            }
+        }
+    }
+
+    .note-editing-area .note-editable {
+        color: $body-color;
+        background: $input-bg;
+    }
+
+    .note-statusbar {
+        background: darken($body-bg,2);
+        border-top-color: $input-border-color;
+    }
+}

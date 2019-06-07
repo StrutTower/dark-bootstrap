@@ -1,0 +1,84 @@
+﻿///<reference path="../variables.scss" />
+///<reference path="../../node_modules/bootstrap/scss/bootstrap.scss" />
+
+.select2.select2-container.select2-container--default {
+    .select2-selection--single, .select2-selection--multiple {
+        font-size: 1rem;
+        padding: 4px 5px;
+        line-height: 1.5;
+        box-sizing: content-box;
+        border-color: $input-border-color;
+        background: $input-bg;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+        .select2-selection__arrow b {
+            border-color: $input-color transparent transparent;
+        }
+    }
+
+    .select2-selection__rendered {
+        color: $body-color;
+
+        .select2-search__field {
+            color: $body-color;
+        }
+
+        .select2-selection__choice {
+            background: $primary;
+            border-color: darken($primary, 3);
+
+            .select2-selection__choice__remove {
+                color: $body-color;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .select2-selection__arrow {
+        height: 36px;
+    }
+
+    &.select2-container--focus {
+        .select2-selection--single, .select2-selection--multiple {
+            border-color: $input-focus-border-color;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba($input-focus-border-color, .25);
+        }
+    }
+}
+
+.select2-container--open.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent $input-color;
+}
+
+select.select2-hidden-accessible.input-validation-error ~ .select2 .select2-selection {
+    border-color: $danger;
+}
+
+.select2-container.select2-container--default .select2-dropdown {
+    background: $input-bg;
+    border-color: $input-border-color;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+
+    .select2-results__option[aria-selected=true] {
+        background: darken($primary,5);
+    }
+
+    .select2-results__option.select2-results__option--highlighted {
+        background: $primary;
+    }
+
+    .select2-search__field {
+        color: $body-color;
+        background: $input-bg;
+        border-color: lighten($input-border-color, 2);
+    }
+
+    .select2-results__option {
+        min-height: 30px;
+    }
+}
