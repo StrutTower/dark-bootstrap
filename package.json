@@ -1,7 +1,7 @@
 {
-  "version": "4.0.0",
+  "version": "1.0.0",
   "name": "dark-bootstrap-theme",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "bootstrap": "~4.3.1",
     "gulp": "~4.0.2",
