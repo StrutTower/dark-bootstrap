@@ -100,7 +100,10 @@ $popover-header-bg: lighten($popover-bg, 3%) !default;
 $modal-content-bg: $body-bg !default;
 $modal-header-border-color: darken($gray-700, 5) !default;
 
-
+// Pagination
+$pagination-disabled-color: $gray-600 !default;
+$pagination-disabled-bg: $gray-700 !default;
+$pagination-disabled-border-color: $gray-700 !default;
 
 // Progress bars
 $progress-bg: $gray-900 !default;
