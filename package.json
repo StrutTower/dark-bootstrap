@@ -1,13 +1,14 @@
 {
-  "version": "4.0.2",
+  "version": "4.0.3",
   "name": "dark-bootstrap-theme",
   "private": false,
   "devDependencies": {
-    "bootstrap": "~4.3.1",
-    "gulp": "~4.0.2",
-    "gulp-sass": "~4.0.2",
-    "gulp-concat": "~2.6.1",
-    "gulp-rename": "~1.4.0",
-    "gulp-clean-css": "~4.2.0"
+    "bootstrap": "4.5.0",
+    "gulp": "4.0.2",
+    "gulp-clean-css": "4.3.0",
+    "gulp-concat": "2.6.1",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "4.1.0",
+    "node-sass": "4.14.1"
   }
 }

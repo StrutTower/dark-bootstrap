@@ -2,7 +2,9 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     cleancss = require('gulp-clean-css'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    concat = require('gulp-concat'),
+    merge = require('merge2');
 
 var options = {
     sass: {
@@ -48,8 +50,20 @@ gulp.task('sass-custom-styles', function () {
         .pipe(gulp.dest(options.sass.dest));
 });
 
+gulp.task('auto-demo', function () {
+    gulp.src('demo/auto/dark.scss')
+        .pipe(sass({ errLogToConsole: true }).on('error', sass.logError))
+        .pipe(concat('dark-theme.css'))
+        .pipe(gulp.dest('demo/auto'));
+
+    return gulp.src('node_modules/bootstrap/scss/bootstrap.scss')
+        .pipe(sass({ errLogToConsole: true }).on('error', sass.logError))
+        .pipe(concat('light-theme.css'))
+        .pipe(gulp.dest('demo/auto'));
+})
+
 gulp.task('sass-watch', function () {
     return gulp.watch(options.sass.files, gulp.series('sass', 'sass-custom-styles'));
 });
 
-gulp.task('default', gulp.parallel('sass', 'sass-custom-styles'));
+gulp.task('default', gulp.parallel('sass', 'sass-custom-styles', 'auto-demo'));
