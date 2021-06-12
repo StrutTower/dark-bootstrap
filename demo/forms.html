@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms | Dark Bootstrap Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/dark.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+    <link type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Dark Bootstrap Theme</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="https://github.com/StrutTower/dark-bootstrap-theme" rel="noreferrer noopener" class="nav-link">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+            <li class="breadcrumb-item active">Forms</li>
+        </ol>
+
+
+        <h2 class="display-4">Forms</h2>
+        <hr />
+        <div class="row">
+            <div class="col-12 col-sm-7">
+                <form>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <span type="text" class="form-control-plaintext">email@example.com</span>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleSelect1">Example select</label>
+                        <select class="form-select" id="exampleSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleSelect2">Example multiple select</label>
+                        <select multiple="" class="form-select" id="exampleSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleTextarea">Example textarea</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleInputFile" class="d-block">Default File input</label>
+                        <input type="file" id="exampleInputFile" aria-describedby="fileHelp">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleInputFile">Custom File input</label>
+                        <input type="file" class="form-control" id="customFile">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <br />
+            <div class="col-12 col-sm-5">
+                <div class="form-group mb-3">
+                    <fieldset disabled="">
+                        <label class="control-label" for="disabledInput">Disabled input</label>
+                        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
+                    </fieldset>
+                </div>
+
+                <div class="form-group mb-3">
+                    <fieldset>
+                        <label class="control-label" for="readOnlyInput">Readonly input</label>
+                        <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly="">
+                    </fieldset>
+                </div>
+
+                <div class="form-group has-success">
+                    <label class="form-control-label" for="inputSuccess1">Valid input</label>
+                    <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
+                    <div class="valid-feedback">Success! You've done it.</div>
+                </div>
+
+                <div class="form-group has-danger">
+                    <label class="form-control-label" for="inputDanger1">Invalid input</label>
+                    <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
+                    <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label>
+                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="col-form-label" for="inputDefault">Default input</label>
+                    <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
+                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="inputSmall">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="control-label">Input addons</label>
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+                <fieldset class="form-group mb-3">
+                    <legend>Radio buttons</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                            Option one is this and that—be sure to include why it's great
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Option two can be something else and selecting it will deselect option one
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                            Option three is disabled
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group mb-3">
+                    <legend>Checkboxes</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" checked="">
+                            Option one is this and that—be sure to include why it's great
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" disabled="">
+                            Option two is disabled
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-12 col-sm-6">
+                <fieldset class="form-group mb-3">
+                    <legend>Custom Radio buttons</legend>
+                    <div class="form-check">
+                        <input type="radio" id="customRadio1" name="customRadio" class="form-check-input">
+                        <label class="form-check-label" for="customRadio1">Toggle this custom radio</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="customRadio2" name="customRadio" class="form-check-input">
+                        <label class="form-check-label" for="customRadio2">Or toggle this other custom radio</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="customRadio3" name="customRadio" class="form-check-input" disabled>
+                        <label class="form-check-label" for="customRadio3">Or toggle this other custom radio</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group mb-3">
+                    <legend>Custom Checkboxes</legend>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="customCheck1">
+                        <label class="form-check-label" for="customCheck1">Check this custom checkbox</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="customCheck2">
+                        <label class="form-check-label" for="customCheck2">Check this custom checkbox</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="customCheck3" disabled>
+                        <label class="form-check-label" for="customCheck3">Check this custom checkbox</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="col-12 col-sm-6">
+                <fieldset>
+                    <legend>Custom Switches</legend>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="customSwitch1">
+                        <label class="form-check-label" for="customSwitch1">Toggle this switch element</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" class="form-check-input" disabled id="customSwitch2">
+                        <label class="form-check-label" for="customSwitch2">Disabled switch element</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-12 col-sm-6">
+                <fieldset>
+                    <legend>Custom Select Lists</legend>
+                    <select class="form-select">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <br />
+                    <br />
+                    <select class="form-select" multiple>
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="col-12 col-sm-6">
+                <fieldset>
+                    <legend>Color Picker</legend>
+                    <label for="exampleColorInput" class="form-label">Color picker</label>
+                    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                </fieldset>
+            </div>
+            <div class="col-12 col-sm-6">
+                <fieldset>
+                    <legend>Custom Range</legend>
+                    <label for="customRange1">Example range</label>
+                    <input type="range" class="form-range" id="customRange1">
+
+                    <label for="customRange2">Example range</label>
+                    <input type="range" class="form-range" " min="0" max="5" id="customRange2">
+                </fieldset>
+            </div>
+
+            <div class="col-12 col-sm-6">
+                <fieldset>
+                    <legend>Floating Labels</legend>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,14 +1,15 @@
 {
-  "version": "4.0.3",
+  "version": "5.0.0",
   "name": "dark-bootstrap-theme",
   "private": false,
+  "license": "MIT",
+  "repository": "",
   "devDependencies": {
-    "bootstrap": "4.5.0",
+    "bootstrap": "5.0.1",
     "gulp": "4.0.2",
     "gulp-clean-css": "4.3.0",
     "gulp-concat": "2.6.1",
     "gulp-rename": "2.0.0",
-    "gulp-sass": "4.1.0",
-    "node-sass": "4.14.1"
+    "gulp-dart-sass": "1.0.2"
   }
 }

@@ -4,39 +4,56 @@
 // Includes fixes that couldn't be fixed with Sass variables alone.
 // When compiling Sass, this should be loaded after Bootstrap's Sass files
 
-// Alerts
-.alert.alert-light {
-    color:$gray-700;
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
 }
 
-// Tables
-.table .table-light {
-    th, td {
-        color:$gray-700;
-    }
+.btn-close-white {
+    filter:none !important;
 }
 
-// Text
-.text-primary {
-    color: lighten($primary, 10) !important;
+.dropdown-menu {
+    box-shadow: $box-shadow-lg;
 }
 
-.text-dark {
-    color: darken($dark, 5) !important;
+.alert-primary {
+    color: $white;
+    background-color: $primary;
+    border-color: lighten($primary, 5);
 }
 
-select::-ms-expand {
-    color:$body-color;
+.alert-secondary {
+    color: $white;
+    background-color: $secondary;
+    border-color: lighten($secondary, 5);
 }
 
-// Hide default arrow on the custom select list
-.custom-select {
-    /* for Firefox */
-    -moz-appearance: none;
-    /* for Chrome */
-    -webkit-appearance: none;
+.alert-success {
+    color: $white;
+    background-color: $success;
+    border-color: lighten($success, 5);
 }
 
-.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-    background:white;
+.alert-danger {
+    color: $white;
+    background-color: $danger;
+    border-color: lighten($danger, 5);
+}
+
+.alert-warning {
+    color: $black;
+    background-color: $warning;
+    border-color: lighten($warning, 5);
+}
+
+.alert-info {
+    color: $black;
+    background-color: $info;
+    border-color: lighten($info, 5);
+}
+
+.alert-dark {
+    color: $white;
+    background-color: darken($dark, 2);
+    border-color: lighten($dark, 6);
 }

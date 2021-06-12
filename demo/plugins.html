@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Plugins | Dark Bootstrap Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/dark.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+    <link type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Dark Bootstrap Theme</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="https://github.com/StrutTower/dark-bootstrap-theme" rel="noreferrer noopener" class="nav-link">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+            <li class="breadcrumb-item active">Plugins</li>
+        </ol>
+
+        <h2 class="display-5">Plugin Styles</h2>
+        <p class="text-muted">The following are JavaScript plugins that have support in this theme.</p>
+        <hr />
+
+        <div class="form-group mb-3">
+            <h3>Summernote <span class="h5"><a href="https://summernote.org/" target="_blank" rel="noopener noreferrer" class="small">https://summernote.org/</a></span></h3>
+
+            <textarea id="summernote-test"></textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <h3>Select2 <span class="h5"><a href="https://select2.org/" target="_blank" rel="noopener noreferrer" class="small">https://select2.org/</a></span></h3>
+
+            <label>Single Select List</label>
+            <select class="select2-test">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+                <option value="5">Option 5</option>
+            </select>
+
+            <label>Multiple Select List</label>
+            <select class="select2-test" multiple>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+                <option value="5">Option 5</option>
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <h3>DateRangePicker <span class="h5"><a href="http://www.daterangepicker.com/" target="_blank" rel="noopener noreferrer" class="small">http://www.daterangepicker.com/</a></span></h3>
+
+
+            <div class="form-group mb-3">
+                <label>Date Range</label>
+                <input type="text" id="daterangepicker-test-range" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+                <label>Single Date</label>
+                <input type="text" id="daterangepicker-test-single" class="form-control" />
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
